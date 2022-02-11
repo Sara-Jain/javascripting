@@ -1,6 +1,6 @@
-let num = 500;
-printArmstrong(num);
-function isArmstrong(i){
+const number = 500;
+printArmstrong(number);
+function isArmstrong(i) {
     let temp = i;
     let sum = 0;
     while (temp > 0) {
@@ -16,9 +16,9 @@ function isArmstrong(i){
     }
 }
 
-function printArmstrong(num){
-    for(let i=1 ; i<=num ; i++){
-        if(isArmstrong(i)){
+function printArmstrong(number) {
+    for (let i = 1; i <= number; i++) {
+        if (isArmstrong(i)) {
             console.log(i);
         }
     }
