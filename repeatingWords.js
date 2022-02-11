@@ -5,11 +5,11 @@ function repeatingWords(s) {
     const words = s.split(' ');
     let flag = false;
     const wordMap = new Map();
-    for (let i = 0; i < words.length; i++) {
-        if (wordMap.has(words[i])) {
+    for (let index = 0; index < words.length; index++) {
+        if (wordMap.has(words[index])) {
             flag = true;
         } else {
-            wordMap.set(words[i], 1);
+            wordMap.set(words[index], 1);
         }
     }
     if (flag) {
